@@ -6,7 +6,7 @@ module BRL
       ACCEPT       = "application/json"
       CONTENT_TYPE = "application/x-www-form-urlencoded"
 
-      def initialize(request_class: Faraday, base_url: BRL::Auth::BASE_URL)
+      def initialize(request_class: Faraday, base_url: BRL.configuration.auth_base_url)
         super(request_class: request_class, base_url: base_url)
       end
 

@@ -44,7 +44,7 @@ module BRL
     attr_writer :auth_base_url, :handshake, :secret_key
 
     def auth_base_url
-      @auth_base_url ||= ENV["BRL_AUTH_BASE_URL"]
+      @auth_base_url ||= BRL::Auth::BASE_URL
     end
 
     def handshake

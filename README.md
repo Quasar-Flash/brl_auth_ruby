@@ -30,6 +30,7 @@ Create the config/initializers/brl.rb file and define:
 ```ruby
 # Set the env variables
 BRL.configure do |config|
+  config.auth_url_value = "https://xxx.hmra.com.br" # optional; default: https://hom.api.acesso.hmra.com.br
   config.handshake = "XXXXXX-XXXXX-XXXX"
   config.secret_key = "xxxxxxxxx"
 end

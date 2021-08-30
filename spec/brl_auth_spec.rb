@@ -50,7 +50,7 @@ RSpec.describe BRL::Auth do
     context "when configuration is not defined" do
       it { expect(subject).not_to be_nil }
 
-      it { expect(subject.auth_base_url).to be_nil }
+      it { expect(subject.auth_base_url).to eq(described_class::BASE_URL) }
 
       it { expect(subject.handshake).to be_nil }
 
@@ -59,14 +59,13 @@ RSpec.describe BRL::Auth do
 
     context "when its configured by envs" do
       before do
-        ENV["BRL_AUTH_BASE_URL"] = "auth_url_value"
         ENV["BRL_HANDSHAKE"] = "handshake_value"
         ENV["BRL_SECRET_KEY"] = "password_value"
       end
 
       it { expect(subject).not_to be_nil }
 
-      it { expect(subject.auth_base_url).to eq("auth_url_value") }
+      it { expect(subject.auth_base_url).to eq(described_class::BASE_URL) }
 
       it { expect(subject.handshake).to eq("handshake_value") }
 
