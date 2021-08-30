@@ -1,0 +1,9 @@
+en:
+  errors:
+    brl:
+      auth:
+        authentication_error: An error ocurred during the authentication
+        bad_request_error: The request body or format is invalid
+        invalid_credentials_error: The credentials informed are invalid
+        server_error: An internal server error ocurred
+        unexpected_error: An unexpected error ocurred
