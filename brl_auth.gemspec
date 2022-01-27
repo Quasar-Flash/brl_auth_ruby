@@ -23,7 +23,7 @@ Gem::Specification.new do |s|
 
   s.add_dependency             "base64", "~> 0.1.0"
   s.add_dependency             "flash_integration", "~> 0.1.0"
-  s.add_dependency             "i18n", "~> 1.8.0", ">= 1.0"
+  s.add_dependency             "i18n", ">= 1.8", "< 1.10"
   s.add_dependency             "json", ">= 2.5.1", "< 2.7.0"
 
   s.add_development_dependency "bundler", "~> 2.2.25", ">= 2.0"
