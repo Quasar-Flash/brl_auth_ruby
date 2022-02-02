@@ -14,7 +14,7 @@ RSpec.describe BRL::Auth::TokenService do
     let(:scope) { "scope" }
     let(:token_type) { "token_type" }
 
-    subject { described_class.new(connection: connection).retrieve }
+    subject { described_class.new(connection:).retrieve }
 
     before do
       allow(connection).to receive(:post).with(url: BRL::Auth::TOKEN_ENDPOINT, body: req_body).and_return(result)
