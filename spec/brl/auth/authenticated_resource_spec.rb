@@ -6,7 +6,7 @@ RSpec.describe BRL::Auth::AuthenticatedResource do
   describe "#initialize" do
     let(:connection) { instance_double(BRL::Auth::AuthenticatedConnection) }
 
-    subject { described_class.new(connection: connection) }
+    subject { described_class.new(connection:) }
 
     it { expect(subject).to be_kind_of(BRL::Auth::AuthenticatedResource) }
   end

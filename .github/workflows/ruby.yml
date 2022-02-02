@@ -1,13 +1,16 @@
 name: brl_auth
 
 on:
+  workflow_dispatch:
   push:
-    branches: '*'
+    branches:
+      - master
   pull_request:
     branches:  '*'
 
 jobs:
   pipeline:
+    if: ${{ github.actor != 'dependabot[bot]' }}
     runs-on: ubuntu-latest
     steps:
     - name: Checkout

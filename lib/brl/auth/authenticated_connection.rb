@@ -10,7 +10,7 @@ module BRL
                       cache: defined?(Rails) ? Rails.cache : nil,
                       request_class: Faraday,
                       base_url: BRL::BASE_URL)
-        super(request_class: request_class, base_url: base_url)
+        super(request_class:, base_url:)
         @token_service = token_service
         @cache = cache
       end
