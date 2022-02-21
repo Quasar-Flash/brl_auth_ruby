@@ -5,9 +5,9 @@ require "spec_helper"
 RSpec.describe BRL::Auth::AuthenticatedConnection do
   describe "#default_headers" do
     let(:token_service) { instance_double(BRL::Auth::TokenService) }
-    let(:token) { BRL::Auth::Token.new(access_token:) }
+    let(:token) { BRL::Auth::Token.new(access_token: access_token) }
 
-    subject { described_class.new(token_service:, cache:).default_headers }
+    subject { described_class.new(token_service: token_service, cache: cache).default_headers }
 
     context "when token is cached" do
       let(:access_token) { "Bearer access_token" }
