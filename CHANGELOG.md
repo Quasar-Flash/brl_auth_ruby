@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## v0.1.2-20220221 - Danilo Carolino
+
+Fixes
+
+* Fix syntactic incompatibility with ruby lower than v3.1.
+
 ## v0.1.1-20220202 - Danilo Carolino
 
 * [QC-79](https://qflash.atlassian.net/jira/software/projects/QC/boards/31?selectedIssue=QC-79)

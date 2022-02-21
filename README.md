@@ -20,7 +20,7 @@ gem install brl_auth
 
 ```ruby
 # Add to the Gemfile
-gem "brl_auth", "~> 0.1.0"
+gem "brl_auth", "~> 0.1.2"
 ```
 
 ## Setting the BRL credentials - Rails Project
