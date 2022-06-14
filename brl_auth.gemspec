@@ -22,7 +22,7 @@ Gem::Specification.new do |s|
   s.metadata["bug_tracker_uri"] = "https://github.com/Quasar-Flash/brl_auth_ruby/issues"
 
   s.add_dependency             "base64", "~> 0.1"
-  s.add_dependency             "flash_integration", "~> 0.1"
+  s.add_dependency             "flash_integration", ">= 0.1", "< 2.0"
   s.add_dependency             "i18n", "~> 1.9", ">= 1.0"
   s.add_dependency             "json", ">= 2.5", "< 2.7"
 
