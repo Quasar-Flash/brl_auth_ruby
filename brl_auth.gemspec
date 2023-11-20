@@ -26,7 +26,7 @@ Gem::Specification.new do |s|
   s.add_dependency             "i18n"
   s.add_dependency             "json"
 
-  s.add_development_dependency "factory_bot", "~> 6.3.0"
+  s.add_development_dependency "factory_bot", "~> 6.4.1"
   s.add_development_dependency "pry", "~> 0.14.1"
   s.add_development_dependency "rake", "~> 13.0.6", ">= 10.0"
   s.add_development_dependency "rspec", "~> 3.12.0"
