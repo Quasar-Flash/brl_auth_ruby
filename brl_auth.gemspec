@@ -27,7 +27,7 @@ Gem::Specification.new do |s|
   s.add_dependency             "json"
 
   s.add_development_dependency "factory_bot", "~> 6.5.0"
-  s.add_development_dependency "pry", "~> 0.14.1"
+  s.add_development_dependency "pry", "~> 0.15.0"
   s.add_development_dependency "rake", ">= 10.0", "~> 13.2.1"
   s.add_development_dependency "rspec", "~> 3.12.0"
   s.add_development_dependency "rubocop", "~> 1.62.1"
